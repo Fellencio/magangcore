@@ -1,3 +1,5 @@
+# File ini adalah file projek VIMFC sejauh ini... bismillah edition
+
 import numpy as np
 import pandas as pd
 
@@ -20,7 +22,7 @@ sst_a = sst_s - np.mean(sst_s)
 # ======================================
 # SECTION: ONI Index from VIMFC and SST
 # ======================================
-oni = sst_a.rolling(window = 3).mean()
+oni = sst_a.rolling(window = 3).mean()  #window=3 berarti untuk mencari index per 3 bulan
 ## DONE!! oni.to_csv('ONI.csv')
 O = np.loadtxt('ONI.csv')
 
