@@ -26,6 +26,10 @@ oni = sst_a.rolling(window = 3).mean()  #window=3 berarti untuk mencari index pe
 ## DONE!! oni.to_csv('ONI.csv')
 O = np.loadtxt('ONI.csv')
 
+## If you have less than 3 months of data, Pandas will attempt to compute the rolling mean with the available data.
+## Specifically: If you have 1 or 2 months of data, Pandas will compute the mean over those months. 
+###If you have fewer than 3 data points, Pandas will compute the mean over as many points as available (which will be less than 3).
+
 # ======================================
 # SECTION: WAVELET ONI INDEX
 # ======================================
